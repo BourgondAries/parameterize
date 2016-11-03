@@ -1,0 +1,21 @@
+[package]
+name = "parameterize"
+version = "0.1.0"
+authors = ["Kevin Robert Stravers <macocio@gmail.com>"]
+license = "GPL-3.0"
+keywords = ["parameterize", "tramp", "racket"]
+documentation = "https://parameterize.stravers.net/parameterize"
+repository = "https://github.com/BourgondAries/parameterize"
+description = """
+Racket-style parameterization to avoid the code-smell of tramp data.
+"""
+
+[dependencies]
+clippy = { version = "0.0", optional = true }
+scopeguard = "0.2.0"
+
+[features]
+default = []
+dev = ["clippy"]
+
+[dev-dependencies]
